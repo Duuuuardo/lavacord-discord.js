@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/MrJacz/discord.js#readme",
   "dependencies": {
-    "lavacord": "github:Duuuuardo/Lavacord#patch-1"
+    "lavacord": "github:PoluxTrail/Lavacord#master"
   },
   "devDependencies": {
     "@types/node": "^16.4.13",
