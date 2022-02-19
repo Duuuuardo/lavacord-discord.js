@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/MrJacz/discord.js#readme",
   "dependencies": {
-    "lavacord": "latest"
+    "lavacord": "^1.1.9"
   },
   "devDependencies": {
     "@types/node": "^16.4.13",
