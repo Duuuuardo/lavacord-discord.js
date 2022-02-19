@@ -28,7 +28,6 @@ class Manager extends lavacord_1.Manager {
         client.once("ready", () => {
             this.user = client.user.id;
             this.shards = client.options.shardCount || 1;
-            this.Player = options?.player ? lavacord_1.Player : lavacord_1.Player;
         });
         client.ws
             .on("VOICE_SERVER_UPDATE", this.voiceServerUpdate.bind(this))
