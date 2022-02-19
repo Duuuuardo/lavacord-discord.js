@@ -17,6 +17,7 @@ export class Manager extends LavacordManager {
         client.once("ready", () => {
             this.user = client.user!.id;
             this.shards = client.options.shardCount || 1;
+            this.Player = options.player
         });
 
         client.ws
