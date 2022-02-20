@@ -29,7 +29,7 @@ class Manager extends lavacord_1.Manager {
             this.user = client.user.id;
             this.shards = client.options.shardCount || 1;
         });
-        client
+        client.ws
             .on("VOICE_SERVER_UPDATE", (data) => this.voiceServerUpdate(data))
             .on("VOICE_STATE_UPDATE", (data) => this.voiceStateUpdate(data))
             .on("GUILD_CREATE", async (data) => {
