@@ -30,8 +30,8 @@ class Manager extends lavacord_1.Manager {
             this.shards = client.options.shardCount || 1;
         });
         client.ws
-            .on("VOICE_SERVER_UPDATE", this.voiceServerUpdate.bind(this))
-            .on("VOICE_STATE_UPDATE", this.voiceStateUpdate.bind(this))
+            .on("VOICE_SERVER_UPDATE", this.voiceServerUpdate(this))
+            .on("VOICE_STATE_UPDATE", this.voiceStateUpdate(this))
             .on("GUILD_CREATE", async (data) => {
             for (const state of data.voice_states)
                 await this.voiceStateUpdate({ ...state, guild_id: data.id });
